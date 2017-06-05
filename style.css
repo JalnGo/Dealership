@@ -1,0 +1,58 @@
+#footer{
+  border: 10px;
+  padding: 2px;
+  border-style: solid;
+  background-color: maroon;
+  border-color: grey;
+  column-count: 4;
+}
+.navlist{
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  border: 1px solid #e7e7e7;
+   background-color: grey;
+}
+
+.nav{
+  list-style-type: none;
+  padding-left: 35%
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.fields{
+  border: 10px;
+  padding: 2px;
+  border-style: solid;
+  background-color: grey;
+  list-style-type: none;
+  color: maroon;
+  border-color: white;
+}
+
+#contactForm{
+padding-left: 40%;
+font-family: sans-serif;
+font-size: 22px;
+}
+
+#headername{
+  font-size: 5.5em;
+  font-family: "Trebuchet MS";
+  padding-left: 25%;
+}
+
+.searchbox{
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.pic1 {
+  width: 140px;
+  height: 140px;
+}

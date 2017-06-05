@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A1 Best Motors</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="jquery-3.2.1.min.js"></script>
+  </head>
+
+<body>
+  <header>
+      <div>
+        <a class="headerlogo" href="index.html">
+            <img class="pic1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJqY0c5Q-JQ-jmKt5_rfCcyz7aHdBttsdkRC99LDMTPah6Zek6" />
+          </a>
+          <span id="headername">A1 Best Motors</span>
+          <form>
+              <input type="search" class="searchbox" placeholder="Search our store" />
+              <option value="imgrobo1"></<option>
+              <option value"imgrobo2"></option>
+              <option value="imgrobo3"></option>
+          </form>
+      </div>
+
+
+      <nav class="backgroundgradient">
+        <ul class=nav>
+          <li class=navlist><a class="navlink" href="index.html">Home</a></li>
+          <li class=navlist><a class="navlink" href="inventoy.html">Inventory</a></li>
+          <li class=navlist><a class="navlink" href="contact.html">Contact</a></li>
+          <li class=navlist><a class="navlink" href="about.html">About</a></li>
+        </ul>
+          </ul>
+      </nav>
+  </header>
+
+<div class=welcome>
+<legend>A1 Best's Top Models</legend>
+</div>
+
+<ul>
+<li class="fields">
+  <article id="robo1">
+  <h4>
+  <label for="imgrobo1">  Name:</label>
+     Lamborghini Huracan</h4>
+  <img id="imgrobo1" src="https://auto.ndtvimg.com/car-images/big/lamborghini/huracan/lamborghini-huracan.jpg?v=13" width=450 height=300 alt="robo1"/>
+  <h5><strong>For information, click below.</strong> <br>
+    <a href="http://www.lamborghini.com/en-en/models/huracan">Lamborghini Huracan</a></h5>
+</article>
+</li>
+
+<li class="fields">
+  <article id="robo2">
+<h4>
+<label for="imgrobo2">  Name:</label>
+   Lamborghini Aventador</h4>
+<img id="imgrobo2" src="http://img.wallpapersafari.com/img360/77/82/fT095i.jpg" width=450 height=300 alt="robo1"/>
+<h5><strong>For information, click below.</strong> <br>
+  <a href="http://www.lamborghini.com/en-en/models/aventador">Lamborghini Aventador</a></h5>
+</article>
+</li>
+
+<li class="fields">
+  <article id="robo3">
+  <h4>
+  <label for="imgrobo3">  Name:</label>
+    Lamborghini Centenario</h4>
+  <img id="imgrobo3" src="https://speedvegas.s3.amazonaws.com/images/uploads/Lamborghini-Centenario-1.png" width=450 height=300 alt="robo1">
+  <h5><strong>For information, click below.</strong> <br>
+  <a href="http://www.lamborghini.com/en-en/models/one-off/centenario">Lamborghini Centenario</a></h5>
+</article>
+</li>
+
+<li class="fields">
+  <article id="robo3">
+  <h4>
+  <label for="imgrobo3">  Name:</label>
+    Lamborghini Veneno</h4>
+  <img id="imgrobo3" src="http://media1.santabanta.com/full1/Cars/Lamborghini/lamborghini-52v.jpg" width=450 height=300 alt="robo1">
+
+  <h5><strong>For information, click below.</strong> <br>
+  <a href="http://www.lamborghini.com/en-en/models/one-off/veneno-roadster">Lamborghini Veneno</a></h5>
+</article>
+</li>
+
+<li class="fields">
+  <article id="robo3">
+  <h4>
+  <label for="imgrobo3">  Name:</label>
+    Lamborghini Asterion</h4>
+  <img id="imgrobo3" src="http://img01.deviantart.net/e27c/i/2014/281/d/7/lamborghini_asterion_by_ilpoli-d820vt2.jpg" width=450 height=300 alt="robo1">
+
+  <h5><strong>For information, click below.</strong> <br>
+    <a href="http://www.lamborghini.com/en-en/models/concept/asterion">Lamborghini Asterion</a></h5>
+
+</article>
+</li>
+
+<li class="fields">
+  <article id="robo3">
+  <h4>
+  <label for="imgrobo3">  Name:</label>
+    Lamborghini Estoque</h4>
+  <img id="imgrobo3" src="http://www.thewheelsofsteel.com/wp-content/uploads/2016/09/New-Lamborghini-Estoque-Images.jpg" width=450 height=300 alt="robo1">
+  <h5><strong>For information, click below.</strong> <br>
+  <a href="http://www.lamborghini.com/en-en/models/concept/estoque">Lamborghini Estoque</a></h5>
+
+</article>
+</li>
+
+</ul>
+</div>
+
+<footer id=footer>
+  <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
+  <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
+  <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
+</footer>
+
+<template id="producttemplate">
+<article>
+  <label id="lblName" for="productimage">Name:</label>
+  <img id="pimage" name="productimage" class="productarticlelargeimage" src="" alt="product image">
+  <article name="productdescription" class="productarticledescription" >
+
+  </article>
+  </article>
+</template>
+<template id="user">
+<div>User</div>
+     <template id="address">
+             <div>Address</div>
+     </template>
+</template>
+<script>
+  var robo = document.querySelector('#robo1').createShadowRoot();
+  /*Step1*/
+  let prdTemplate = document.querySelector('#producttemplate');
+  /*Step2*/
+  let clone = document.importNode(prdTemplate.content, true);
+  /*Step3*/
+
+  clone.querySelector('#pimage').src = 'images/roboDog.png';
+  clone.querySelector('#lblName').textContent = 'R.E.T';
+
+ /*Step4*/
+  robo.appendChild(clone);
+  let userTemplate = document.querySelector('#user');
+  let userClone = document.importNode(userTemplate.content, true);
+  document.body.appendChild(userClone);
+    let addressTemplate = document.querySelector('#address');
+    let addressClone = document.importNode(addressTemplate.content, true);
+  document.body.appendChild(addressClone);
+</script>
+</body>
+</html>
